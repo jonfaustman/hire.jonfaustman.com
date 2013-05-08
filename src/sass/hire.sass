@@ -1,0 +1,282 @@
+// Import base
+@import _base.sass
+
+
+// Variables and global silent classes
+$base-font-size: 16px
+$base-font-family-serif: Georgia, 'Times New Roman', Times, serif
+$base-font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif
+$fade-out: rgb(150,150,150)
+$fade-in: rgb(33,33,33)
+$spot-color: rgb(75,75,255)
+$complement-color: lighten(complement($spot-color), 25%)
+%sans-heading
+    +font($family: $base-font-family-sans, $weight: bold)
+
+
+// Generic settings
+body
+    +font($size: $base-font-size, $height: 1.4, $family: $base-font-family-serif, $shorthand: true)
+    background-color: $fade-out
+    color: $fade-in
+    min-width: 320px
+    +respond-to(tablet)
+        min-width: 768px
+    +respond-to(desktop)
+        min-width: 769px
+    @media print
+        font-size: 10pt
+
+a
+    +transition(color .5s linear)
+    color: $spot-color
+    text-decoration: none
+    &:active,
+    &:focus,
+    &:hover
+        color: darken($spot-color, 20%)
+        text-decoration: underline
+    &:visted
+        color: darken($spot-color, 30%)
+
+abbr
+    cursor: help
+
+img
+    max-width: 100%
+
+ul
+    list-style: disc
+    margin-left: 1.4em
+
+ul ul
+    list-style: circle
+
+::-moz-selection
+    background: $complement-color
+    +text-shadow(none)
+
+::selection 
+    background: $complement-color
+    +text-shadow(none)
+
+// Wrapper
+.wrapper
+    margin: .7em auto
+    max-width: 767px
+    min-width: 320px
+    +respond-to(tablet)
+        min-width: 768px
+        max-width: 768px
+    +respond-to(desktop)
+        min-width: 769px
+        max-width: 960px
+
+
+// No man is an island, but content can be.
+.island
+    +box-shadow(-2px 2px 4px rgba(0,0,0,.25))
+    +box-sizing(border-box)
+    background: rgb(255,255,255)
+    margin: 0 .7em .7em
+    padding: 1.4em
+    position: relative
+    +respond-to(tablet)
+        margin: 0 .7em
+        padding: .7em 1.4em
+    +respond-to(desktop)
+        padding: em(44px) 0 .7em
+        margin-left: em(66px)
+    @media print
+        +box-shadow(none)
+        padding: 0
+
+.island--about
+    @extend .island
+    +respond-to(desktop)
+        padding-top: em(66px)
+
+.island-heading
+    +box-shadow(-2px 2px 4px rgba(0,0,0,.25))
+    +font($size: 28px, $spacing: -1px)
+    +text-shadow(-1px 1px 0 rgba(0,0,0,.5))
+    background-color: $spot-color
+    color: $complement-color
+    display: inline-block
+    margin-bottom: em(11px, $base: 28px)
+    padding: 0 em(11px, $base: 28px)
+    +respond-to(desktop)
+        +transform(rotate(-4deg))
+        left: em(-66px, $base: 28px)
+        margin: 0
+        position: absolute
+        top: 0
+        z-index: 2
+    @media print
+        +box-shadow(none)
+        +text-shadow(none)
+        background-color: transparent
+        color: rgb(0,0,0)
+        font-size: 18pt
+        padding: 0
+
+.island-heading--about
+    @extend .island-heading
+    +respond-to(desktop)
+        margin-top: em(22px, $base: 28px)
+
+
+// Contact information
+%contact
+    padding: 1.4em
+    text-align: center
+    @media print
+        padding: 0 0 .7em
+
+.contact--header
+    @extend %contact
+    +respond-to(tablet)
+        border-bottom: 4px solid $spot-color
+    @media print
+        border-bottom: 2px solid rgb(0,0,0)
+
+.contact--footer
+    @extend %contact
+    +respond-to(tablet)
+        border-top: 4px solid $spot-color
+    @media print
+        display: none
+
+.contact-name
+    +font($size: 32px, $weight: bold, $spacing: -1px)
+    @media print
+        font-size: 22pt
+
+.contact-title
+    +font($size: 22px, $weight: bold)
+    @media print
+        font-size: 16pt
+        line-height: 1
+
+.contact-info
+    margin-left: 0
+    padding: .7em 0 0
+
+.contact--footer > .contact-info
+    padding: 0
+
+.contact-info > li
+    display: inline
+    padding-left: 1.4em
+    &:first-child
+        padding-left: 0
+
+
+// Event information
+.event
+    @extend .event--recent
+    +respond-to(desktop)
+        color: $fade-out
+
+.event--recent
+    margin-bottom: .7em
+    +respond-to(desktop)
+        +transition(color .5s linear)
+        +transition(background-color 1.5s linear)
+        padding: .7em 1.4em .7em em(99px)
+        position: relative
+        &:hover
+            background-color: $complement-color
+            color: $fade-in
+    @media print
+        margin-bottom: 1.4em
+        padding: 0
+
+.event-heading
+    +font($size: 28px, $height: 1)
+    @extend %sans-heading
+    @media print
+        font-size: 12pt
+
+.event-place
+    @extend %sans-heading
+
+.event-time
+    @extend %sans-heading
+    +font($height: 1)
+    margin-bottom: .7em
+    +respond-to(desktop)
+        left: 1.4em
+        position: absolute
+        top: .7em
+        width: em(66px)
+
+.event-year
+    @extend %sans-heading
+    &:before
+        content: "20"
+    +respond-to(desktop)
+        +font($size: 28px)
+        display: block
+        &:before
+            content: ""
+    @media print
+        font-size: 10pt
+
+.event-year--current
+    @extend .event-year
+    &:before
+        content: ""
+    +font($size: 16px)
+    @media print
+        font-size: 10pt
+
+.event-details
+    margin-top: .7em
+
+.event-image
+    margin-top: .7em
+    +respond-to(desktop)
+        +transition(all .5s linear)
+        &:hover
+            +box-shadow(-1px 1px 3px rgba(0,0,0,.5))
+
+
+// Helper classes
+.alert-warning
+    background-color: $complement-color
+    padding: 1.4em
+
+.linear
+    margin-left: 0
+    +respond-to(desktop)
+        margin-left: 1.4em
+
+.linear > li
+    display: inline
+    &:after
+        content: ", "
+    &:last-child
+        &:after
+            content: "."
+    +respond-to(desktop)
+        display: list-item
+        &:after
+            content: ""
+        &:last-child
+            &:after
+                content: ""
+
+
+// Microformat specific
+.include
+    +squish-text
+    position: absolute
+
+
+// Print specific settomgs
+@media print
+    #projects
+        display: none
+    #experience > .event:nth-child(3)
+        page-break-after: always
