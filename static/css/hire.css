@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 13, ../../src/sass/hire.sass */
-.event-heading, .event-place, .event-time, .event-year, .event-year--current {
+.event-heading, .event-subheading, .event-subheading--time, .event-year, .event-year--current {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
@@ -404,13 +404,13 @@ ul ul {
 }
 
 /* line 204, ../../src/sass/hire.sass */
-.event-time {
+.event-subheading--time {
   line-height: 1;
   margin-bottom: 0.7em;
 }
 @media only screen and (min-width: 769px) {
   /* line 204, ../../src/sass/hire.sass */
-  .event-time {
+  .event-subheading--time {
     left: 1.4em;
     position: absolute;
     top: 0.7em;
