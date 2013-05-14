@@ -161,8 +161,12 @@ ul ul
         font-size: 16pt
         line-height: 1
 
-.contact-info
+.contact-info--ref
+    list-style: none
     margin-left: 0
+
+.contact-info
+    @extend .contact-info--ref
     padding: .7em 0 0
 
 .contact--footer > .contact-info
@@ -173,7 +177,6 @@ ul ul
     padding-left: 1.4em
     &:first-child
         padding-left: 0
-
 
 // Event information
 .event
