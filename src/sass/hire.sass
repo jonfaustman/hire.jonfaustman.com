@@ -8,6 +8,8 @@ $base-font-family-serif: Georgia, 'Times New Roman', Times, serif
 $base-font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif
 $fade-out: rgb(150,150,150)
 $fade-in: rgb(33,33,33)
+$shadow-start: -2px 2px 4px rgba(0,0,0,.25)
+$shadow-hover: -3px 3px 4px rgba(0,0,0,.5)
 $spot-color: rgb(75,75,255)
 $complement-color: lighten(complement($spot-color), 25%)
 %sans-heading
@@ -75,7 +77,7 @@ ul ul
 
 // No man is an island, but content can be.
 .island
-    +box-shadow(-2px 2px 4px rgba(0,0,0,.25))
+    +box-shadow($shadow-start)
     +box-sizing(border-box)
     background: rgb(255,255,255)
     margin: 0 .7em .7em
@@ -97,7 +99,7 @@ ul ul
         padding-top: em(66px)
 
 .island-heading
-    +box-shadow(-2px 2px 4px rgba(0,0,0,.25))
+    +box-shadow($shadow-start)
     +font($size: 28px, $spacing: -1px)
     +text-shadow(-1px 1px 0 rgba(0,0,0,.5))
     background-color: $spot-color
@@ -107,11 +109,14 @@ ul ul
     padding: 0 em(11px, $base: 28px)
     +respond-to(desktop)
         +transform(rotate(-4deg))
+        +transition(all .5s linear)
         left: em(-66px, $base: 28px)
         margin: 0
         position: absolute
         top: 0
         z-index: 2
+        &:hover
+            +box-shadow($shadow-hover)
     @media print
         +box-shadow(none)
         +text-shadow(none)
@@ -241,11 +246,12 @@ ul ul
     margin-top: .7em
 
 .event-image
+    +box-shadow($shadow-start)
     margin-top: .7em
     +respond-to(desktop)
         +transition(all .5s linear)
         &:hover
-            +box-shadow(-1px 1px 3px rgba(0,0,0,.5))
+            +box-shadow($shadow-hover)
 
 
 // Helper classes

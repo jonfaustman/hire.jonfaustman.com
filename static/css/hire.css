@@ -63,13 +63,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 13, ../../src/sass/hire.sass */
+/* line 15, ../../src/sass/hire.sass */
 .event-heading, .event-subheading, .event-subheading--time, .event-year, .event-year--current {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
-/* line 18, ../../src/sass/hire.sass */
+/* line 20, ../../src/sass/hire.sass */
 body {
   font: normal normal normal 16px/1.4 Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
@@ -78,25 +78,25 @@ body {
   min-width: 320px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 18, ../../src/sass/hire.sass */
+  /* line 20, ../../src/sass/hire.sass */
   body {
     min-width: 768px;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 18, ../../src/sass/hire.sass */
+  /* line 20, ../../src/sass/hire.sass */
   body {
     min-width: 769px;
   }
 }
 @media print {
-  /* line 18, ../../src/sass/hire.sass */
+  /* line 20, ../../src/sass/hire.sass */
   body {
     font-size: 10pt;
   }
 }
 
-/* line 30, ../../src/sass/hire.sass */
+/* line 32, ../../src/sass/hire.sass */
 a {
   -webkit-transition: color 0.5s linear;
   -moz-transition: color 0.5s linear;
@@ -105,71 +105,71 @@ a {
   color: #4b4bff;
   text-decoration: none;
 }
-/* line 34, ../../src/sass/hire.sass */
+/* line 36, ../../src/sass/hire.sass */
 a:active, a:focus, a:hover {
   color: #0000e4;
   text-decoration: underline;
 }
-/* line 39, ../../src/sass/hire.sass */
+/* line 41, ../../src/sass/hire.sass */
 a:visted {
   color: #0000b1;
 }
 
-/* line 42, ../../src/sass/hire.sass */
+/* line 44, ../../src/sass/hire.sass */
 abbr {
   cursor: help;
 }
 
-/* line 45, ../../src/sass/hire.sass */
+/* line 47, ../../src/sass/hire.sass */
 img {
   max-width: 100%;
 }
 
-/* line 48, ../../src/sass/hire.sass */
+/* line 50, ../../src/sass/hire.sass */
 ul {
   list-style: disc;
   margin-left: 1.4em;
 }
 
-/* line 52, ../../src/sass/hire.sass */
+/* line 54, ../../src/sass/hire.sass */
 ul ul {
   list-style: circle;
 }
 
-/* line 55, ../../src/sass/hire.sass */
+/* line 57, ../../src/sass/hire.sass */
 ::-moz-selection {
   background: #ffffca;
   text-shadow: none;
 }
 
-/* line 59, ../../src/sass/hire.sass */
+/* line 61, ../../src/sass/hire.sass */
 ::selection {
   background: #ffffca;
   text-shadow: none;
 }
 
-/* line 64, ../../src/sass/hire.sass */
+/* line 66, ../../src/sass/hire.sass */
 .wrapper {
   margin: 0.7em auto;
   max-width: 767px;
   min-width: 320px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 64, ../../src/sass/hire.sass */
+  /* line 66, ../../src/sass/hire.sass */
   .wrapper {
     min-width: 768px;
     max-width: 768px;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 64, ../../src/sass/hire.sass */
+  /* line 66, ../../src/sass/hire.sass */
   .wrapper {
     min-width: 769px;
     max-width: 960px;
   }
 }
 
-/* line 77, ../../src/sass/hire.sass */
+/* line 79, ../../src/sass/hire.sass */
 .island, .island--about {
   -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -183,21 +183,21 @@ ul ul {
   position: relative;
 }
 @media only screen and (min-width: 768px) {
-  /* line 77, ../../src/sass/hire.sass */
+  /* line 79, ../../src/sass/hire.sass */
   .island, .island--about {
     margin: 0 0.7em;
     padding: 0.7em 1.4em;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 77, ../../src/sass/hire.sass */
+  /* line 79, ../../src/sass/hire.sass */
   .island, .island--about {
     padding: 2.75em 0 0.7em;
     margin-left: 4.125em;
   }
 }
 @media print {
-  /* line 77, ../../src/sass/hire.sass */
+  /* line 79, ../../src/sass/hire.sass */
   .island, .island--about {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -207,13 +207,13 @@ ul ul {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 94, ../../src/sass/hire.sass */
+  /* line 96, ../../src/sass/hire.sass */
   .island--about {
     padding-top: 4.125em;
   }
 }
 
-/* line 99, ../../src/sass/hire.sass */
+/* line 101, ../../src/sass/hire.sass */
 .island-heading, .island-heading--about {
   -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -229,22 +229,32 @@ ul ul {
   padding: 0 0.39286em;
 }
 @media only screen and (min-width: 769px) {
-  /* line 99, ../../src/sass/hire.sass */
+  /* line 101, ../../src/sass/hire.sass */
   .island-heading, .island-heading--about {
     -webkit-transform: rotate(-4deg);
     -moz-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
     -o-transform: rotate(-4deg);
     transform: rotate(-4deg);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
     left: -2.35714em;
     margin: 0;
     position: absolute;
     top: 0;
     z-index: 2;
   }
+  /* line 118, ../../src/sass/hire.sass */
+  .island-heading:hover, .island-heading--about:hover {
+    -webkit-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+  }
 }
 @media print {
-  /* line 99, ../../src/sass/hire.sass */
+  /* line 101, ../../src/sass/hire.sass */
   .island-heading, .island-heading--about {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -258,56 +268,56 @@ ul ul {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 123, ../../src/sass/hire.sass */
+  /* line 128, ../../src/sass/hire.sass */
   .island-heading--about {
     margin-top: 0.78571em;
   }
 }
 
-/* line 130, ../../src/sass/hire.sass */
+/* line 135, ../../src/sass/hire.sass */
 .contact--header, .contact--footer {
   padding: 1.4em;
   text-align: center;
 }
 @media print {
-  /* line 130, ../../src/sass/hire.sass */
+  /* line 135, ../../src/sass/hire.sass */
   .contact--header, .contact--footer {
     padding: 0 0 0.7em;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 136, ../../src/sass/hire.sass */
+  /* line 141, ../../src/sass/hire.sass */
   .contact--header {
     border-bottom: 4px solid #4b4bff;
   }
 }
 @media print {
-  /* line 136, ../../src/sass/hire.sass */
+  /* line 141, ../../src/sass/hire.sass */
   .contact--header {
     border-bottom: 2px solid black;
   }
 }
-/* line 142, ../../src/sass/hire.sass */
+/* line 147, ../../src/sass/hire.sass */
 .contact--header > a {
   color: inherit;
   text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 146, ../../src/sass/hire.sass */
+  /* line 151, ../../src/sass/hire.sass */
   .contact--footer {
     border-top: 4px solid #4b4bff;
   }
 }
 @media print {
-  /* line 146, ../../src/sass/hire.sass */
+  /* line 151, ../../src/sass/hire.sass */
   .contact--footer {
     display: none;
   }
 }
 
-/* line 153, ../../src/sass/hire.sass */
+/* line 158, ../../src/sass/hire.sass */
 .contact-name {
   font-size: 32px;
   font-size: 2rem;
@@ -315,65 +325,65 @@ ul ul {
   letter-spacing: -1px;
 }
 @media print {
-  /* line 153, ../../src/sass/hire.sass */
+  /* line 158, ../../src/sass/hire.sass */
   .contact-name {
     font-size: 22pt;
   }
 }
 
-/* line 158, ../../src/sass/hire.sass */
+/* line 163, ../../src/sass/hire.sass */
 .contact-title {
   font-size: 22px;
   font-size: 1.375rem;
   font-weight: bold;
 }
 @media print {
-  /* line 158, ../../src/sass/hire.sass */
+  /* line 163, ../../src/sass/hire.sass */
   .contact-title {
     font-size: 16pt;
     line-height: 1;
   }
 }
 
-/* line 164, ../../src/sass/hire.sass */
+/* line 169, ../../src/sass/hire.sass */
 .contact-info--ref, .contact-info {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 168, ../../src/sass/hire.sass */
+/* line 173, ../../src/sass/hire.sass */
 .contact-info {
   padding: 0.7em 0 0;
 }
 
-/* line 172, ../../src/sass/hire.sass */
+/* line 177, ../../src/sass/hire.sass */
 .contact--footer > .contact-info {
   padding: 0;
 }
 
-/* line 175, ../../src/sass/hire.sass */
+/* line 180, ../../src/sass/hire.sass */
 .contact-info > li {
   display: inline;
   padding-left: 1.4em;
 }
-/* line 178, ../../src/sass/hire.sass */
+/* line 183, ../../src/sass/hire.sass */
 .contact-info > li:first-child {
   padding-left: 0;
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 182, ../../src/sass/hire.sass */
+  /* line 187, ../../src/sass/hire.sass */
   .event {
     color: #969696;
   }
 }
 
-/* line 187, ../../src/sass/hire.sass */
+/* line 192, ../../src/sass/hire.sass */
 .event--recent, .event {
   margin-bottom: 0.7em;
 }
 @media only screen and (min-width: 769px) {
-  /* line 187, ../../src/sass/hire.sass */
+  /* line 192, ../../src/sass/hire.sass */
   .event--recent, .event {
     -webkit-transition: color 0.5s linear;
     -moz-transition: color 0.5s linear;
@@ -386,40 +396,40 @@ ul ul {
     padding: 0.7em 1.4em 0.7em 6.1875em;
     position: relative;
   }
-  /* line 194, ../../src/sass/hire.sass */
+  /* line 199, ../../src/sass/hire.sass */
   .event--recent:hover, .event:hover {
     background-color: #ffffca;
     color: #212121;
   }
 }
 @media print {
-  /* line 187, ../../src/sass/hire.sass */
+  /* line 192, ../../src/sass/hire.sass */
   .event--recent, .event {
     margin-bottom: 1.4em;
     padding: 0;
   }
 }
 
-/* line 201, ../../src/sass/hire.sass */
+/* line 206, ../../src/sass/hire.sass */
 .event-heading {
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1;
 }
 @media print {
-  /* line 201, ../../src/sass/hire.sass */
+  /* line 206, ../../src/sass/hire.sass */
   .event-heading {
     font-size: 12pt;
   }
 }
 
-/* line 210, ../../src/sass/hire.sass */
+/* line 215, ../../src/sass/hire.sass */
 .event-subheading--time {
   line-height: 1;
   margin-bottom: 0.7em;
 }
 @media only screen and (min-width: 769px) {
-  /* line 210, ../../src/sass/hire.sass */
+  /* line 215, ../../src/sass/hire.sass */
   .event-subheading--time {
     left: 1.4em;
     position: absolute;
@@ -428,115 +438,118 @@ ul ul {
   }
 }
 
-/* line 222, ../../src/sass/hire.sass */
+/* line 227, ../../src/sass/hire.sass */
 .event-year:before, .event-year--current:before {
   content: "20";
 }
 @media only screen and (min-width: 769px) {
-  /* line 220, ../../src/sass/hire.sass */
+  /* line 225, ../../src/sass/hire.sass */
   .event-year, .event-year--current {
     font-size: 28px;
     font-size: 1.75rem;
     display: block;
   }
-  /* line 227, ../../src/sass/hire.sass */
+  /* line 232, ../../src/sass/hire.sass */
   .event-year:before, .event-year--current:before {
     content: "";
   }
 }
 @media print {
-  /* line 220, ../../src/sass/hire.sass */
+  /* line 225, ../../src/sass/hire.sass */
   .event-year, .event-year--current {
     font-size: 10pt;
   }
 }
 
-/* line 232, ../../src/sass/hire.sass */
+/* line 237, ../../src/sass/hire.sass */
 .event-year--current {
   font-size: 16px;
   font-size: 1rem;
 }
-/* line 234, ../../src/sass/hire.sass */
+/* line 239, ../../src/sass/hire.sass */
 .event-year--current:before {
   content: "";
 }
 @media print {
-  /* line 232, ../../src/sass/hire.sass */
+  /* line 237, ../../src/sass/hire.sass */
   .event-year--current {
     font-size: 10pt;
   }
 }
 
-/* line 240, ../../src/sass/hire.sass */
+/* line 245, ../../src/sass/hire.sass */
 .event-details {
   margin-top: 0.7em;
 }
 
-/* line 243, ../../src/sass/hire.sass */
+/* line 248, ../../src/sass/hire.sass */
 .event-image {
+  -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
   margin-top: 0.7em;
 }
 @media only screen and (min-width: 769px) {
-  /* line 243, ../../src/sass/hire.sass */
+  /* line 248, ../../src/sass/hire.sass */
   .event-image {
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
   }
-  /* line 247, ../../src/sass/hire.sass */
+  /* line 253, ../../src/sass/hire.sass */
   .event-image:hover {
-    -webkit-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
   }
 }
 
-/* line 252, ../../src/sass/hire.sass */
+/* line 258, ../../src/sass/hire.sass */
 .alert-warning {
   background-color: #ffffca;
   padding: 1.4em;
 }
 
-/* line 256, ../../src/sass/hire.sass */
+/* line 262, ../../src/sass/hire.sass */
 .linear {
   margin-left: 0;
 }
 @media only screen and (min-width: 769px) {
-  /* line 256, ../../src/sass/hire.sass */
+  /* line 262, ../../src/sass/hire.sass */
   .linear {
     margin-left: 1.4em;
   }
 }
 
-/* line 261, ../../src/sass/hire.sass */
+/* line 267, ../../src/sass/hire.sass */
 .linear > li {
   display: inline;
 }
-/* line 263, ../../src/sass/hire.sass */
+/* line 269, ../../src/sass/hire.sass */
 .linear > li:after {
   content: ", ";
 }
-/* line 266, ../../src/sass/hire.sass */
+/* line 272, ../../src/sass/hire.sass */
 .linear > li:last-child:after {
   content: ".";
 }
 @media only screen and (min-width: 769px) {
-  /* line 261, ../../src/sass/hire.sass */
+  /* line 267, ../../src/sass/hire.sass */
   .linear > li {
     display: list-item;
   }
-  /* line 270, ../../src/sass/hire.sass */
+  /* line 276, ../../src/sass/hire.sass */
   .linear > li:after {
     content: "";
   }
-  /* line 273, ../../src/sass/hire.sass */
+  /* line 279, ../../src/sass/hire.sass */
   .linear > li:last-child:after {
     content: "";
   }
 }
 
-/* line 278, ../../src/sass/hire.sass */
+/* line 284, ../../src/sass/hire.sass */
 .include {
   font: 0/0 serif;
   text-shadow: none;
@@ -545,12 +558,12 @@ ul ul {
 }
 
 @media print {
-  /* line 285, ../../src/sass/hire.sass */
+  /* line 291, ../../src/sass/hire.sass */
   #projects {
     display: none;
   }
 
-  /* line 287, ../../src/sass/hire.sass */
+  /* line 293, ../../src/sass/hire.sass */
   #experience > .event:nth-child(3) {
     page-break-after: always;
   }
