@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 15, ../../src/sass/hire.sass */
-.event-heading, .event-subheading, .event-subheading--time, .event-year, .event-year--current {
+.event__heading, .event__subheading, .event__subheading--time, .event__year, .event__year--current {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
@@ -214,7 +214,7 @@ ul ul {
 }
 
 /* line 101, ../../src/sass/hire.sass */
-.island-heading, .island-heading--about {
+.island__heading, .island__heading--about {
   -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
   box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -230,7 +230,7 @@ ul ul {
 }
 @media only screen and (min-width: 769px) {
   /* line 101, ../../src/sass/hire.sass */
-  .island-heading, .island-heading--about {
+  .island__heading, .island__heading--about {
     -webkit-transform: rotate(-4deg);
     -moz-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
@@ -247,7 +247,7 @@ ul ul {
     z-index: 2;
   }
   /* line 118, ../../src/sass/hire.sass */
-  .island-heading:hover, .island-heading--about:hover {
+  .island__heading:hover, .island__heading--about:hover {
     -webkit-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
     box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
@@ -255,7 +255,7 @@ ul ul {
 }
 @media print {
   /* line 101, ../../src/sass/hire.sass */
-  .island-heading, .island-heading--about {
+  .island__heading, .island__heading--about {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -269,7 +269,7 @@ ul ul {
 
 @media only screen and (min-width: 769px) {
   /* line 128, ../../src/sass/hire.sass */
-  .island-heading--about {
+  .island__heading--about {
     margin-top: 0.78571em;
   }
 }
@@ -318,7 +318,7 @@ ul ul {
 }
 
 /* line 158, ../../src/sass/hire.sass */
-.contact-name {
+.contact__name {
   font-size: 32px;
   font-size: 2rem;
   font-weight: bold;
@@ -326,33 +326,33 @@ ul ul {
 }
 @media print {
   /* line 158, ../../src/sass/hire.sass */
-  .contact-name {
+  .contact__name {
     font-size: 22pt;
   }
 }
 
 /* line 163, ../../src/sass/hire.sass */
-.contact-title {
+.contact__title {
   font-size: 22px;
   font-size: 1.375rem;
   font-weight: bold;
 }
 @media print {
   /* line 163, ../../src/sass/hire.sass */
-  .contact-title {
+  .contact__title {
     font-size: 16pt;
     line-height: 1;
   }
 }
 
 /* line 169, ../../src/sass/hire.sass */
-.contact-info--ref, .contact-info {
+.contact__info--ref, .contact__info {
   list-style: none;
   margin-left: 0;
 }
 
 /* line 173, ../../src/sass/hire.sass */
-.contact-info {
+.contact__info {
   padding: 0.7em 0 0;
 }
 
@@ -362,12 +362,12 @@ ul ul {
 }
 
 /* line 180, ../../src/sass/hire.sass */
-.contact-info > li {
+.contact__info > li {
   display: inline;
   padding-left: 1.4em;
 }
 /* line 183, ../../src/sass/hire.sass */
-.contact-info > li:first-child {
+.contact__info > li:first-child {
   padding-left: 0;
 }
 
@@ -411,26 +411,26 @@ ul ul {
 }
 
 /* line 206, ../../src/sass/hire.sass */
-.event-heading {
+.event__heading {
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1;
 }
 @media print {
   /* line 206, ../../src/sass/hire.sass */
-  .event-heading {
+  .event__heading {
     font-size: 12pt;
   }
 }
 
 /* line 215, ../../src/sass/hire.sass */
-.event-subheading--time {
+.event__subheading--time {
   line-height: 1;
   margin-bottom: 0.7em;
 }
 @media only screen and (min-width: 769px) {
   /* line 215, ../../src/sass/hire.sass */
-  .event-subheading--time {
+  .event__subheading--time {
     left: 1.4em;
     position: absolute;
     top: 0.7em;
@@ -439,51 +439,51 @@ ul ul {
 }
 
 /* line 227, ../../src/sass/hire.sass */
-.event-year:before, .event-year--current:before {
+.event__year:before, .event__year--current:before {
   content: "20";
 }
 @media only screen and (min-width: 769px) {
   /* line 225, ../../src/sass/hire.sass */
-  .event-year, .event-year--current {
+  .event__year, .event__year--current {
     font-size: 28px;
     font-size: 1.75rem;
     display: block;
   }
   /* line 232, ../../src/sass/hire.sass */
-  .event-year:before, .event-year--current:before {
+  .event__year:before, .event__year--current:before {
     content: "";
   }
 }
 @media print {
   /* line 225, ../../src/sass/hire.sass */
-  .event-year, .event-year--current {
+  .event__year, .event__year--current {
     font-size: 10pt;
   }
 }
 
 /* line 237, ../../src/sass/hire.sass */
-.event-year--current {
+.event__year--current {
   font-size: 16px;
   font-size: 1rem;
 }
 /* line 239, ../../src/sass/hire.sass */
-.event-year--current:before {
+.event__year--current:before {
   content: "";
 }
 @media print {
   /* line 237, ../../src/sass/hire.sass */
-  .event-year--current {
+  .event__year--current {
     font-size: 10pt;
   }
 }
 
 /* line 245, ../../src/sass/hire.sass */
-.event-details {
+.event__details {
   margin-top: 0.7em;
 }
 
 /* line 248, ../../src/sass/hire.sass */
-.event-image {
+.event__image {
   -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
   box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -491,14 +491,14 @@ ul ul {
 }
 @media only screen and (min-width: 769px) {
   /* line 248, ../../src/sass/hire.sass */
-  .event-image {
+  .event__image {
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
   }
   /* line 253, ../../src/sass/hire.sass */
-  .event-image:hover {
+  .event__image:hover {
     -webkit-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
     box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
@@ -506,7 +506,7 @@ ul ul {
 }
 
 /* line 258, ../../src/sass/hire.sass */
-.alert-warning {
+.alert--warning {
   background-color: #ffffca;
   padding: 1.4em;
 }
