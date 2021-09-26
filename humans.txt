@@ -1,5 +1,5 @@
 /* TEAM */
-    Web Application Developer: Jon Faustman
+    Senior Front-end Developer: Jon Faustman
     Site: http://jonfaustman.com/
     Twitter: @faustman
     Location: Manhattan, KS
