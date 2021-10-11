@@ -118,6 +118,7 @@ a:visted {
 /* line 44, ../../src/sass/hire.sass */
 abbr {
   cursor: help;
+  text-decoration: none;
 }
 
 /* line 47, ../../src/sass/hire.sass */
@@ -480,6 +481,10 @@ ul ul {
 /* line 245, ../../src/sass/hire.sass */
 .event__details {
   margin-top: 0.7em;
+}
+
+a.event__details {
+  display: block;
 }
 
 /* line 248, ../../src/sass/hire.sass */
