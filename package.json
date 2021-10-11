@@ -1,0 +1,37 @@
+{
+  "name": "hire",
+  "version": "1.2.0",
+  "description": "A personal résumé utilizing a mobile-first, responsive design built with HTML, CSS, Sass, Compass, BEM and microformats.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jon Faustman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonfaustman/hire.jonfaustman.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonfaustman/hire.jonfaustman.com/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "grunt": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-cssmin": "",
+    "grunt-contrib-imagemin": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": "",
+    "grunt-postcss": "",
+    "grunt-sass": "",
+    "load-grunt-config": "",
+    "sass": "",
+    "time-grunt": ""
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
