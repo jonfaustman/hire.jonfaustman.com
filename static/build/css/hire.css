@@ -377,8 +377,9 @@ a:visted {
   color: #0000b1;
 }
 
-abbr {
+abbr[title] {
   cursor: help;
+  text-decoration: none;
 }
 
 img {
@@ -443,7 +444,6 @@ ul ul {
     padding: 0;
   }
 }
-
 @media only screen and (min-width: 769px) {
   .island--about {
     padding-top: 4.125em;
@@ -477,7 +477,6 @@ ul ul {
     padding: 0;
   }
 }
-
 @media only screen and (min-width: 769px) {
   .island__heading--about {
     margin-top: 0.7857142857em;
