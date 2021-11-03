@@ -16,7 +16,8 @@ module.exports = {
     options: {
       implementation: sass,
       outputStyle: 'expanded',
-      sourceMap: false
+      sourceMap: false,
+      includePaths: ['node_modules']
     }
   }
 };
