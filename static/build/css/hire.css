@@ -1,0 +1,365 @@
+.event__year, .event__year--current, .event__subheading--time, .event__subheading, .event__heading {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  font: normal normal normal 16px/1.4 Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  background-color: #969696;
+  color: #212121;
+  min-width: 320px;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  body {
+    min-width: 769px;
+  }
+}
+@media print {
+  body {
+    font-size: 10pt;
+  }
+}
+
+a {
+  color: #4b4bff;
+  text-decoration: none;
+}
+a:active, a:focus, a:hover {
+  color: #0000e4;
+  text-decoration: underline;
+}
+a:visted {
+  color: #0000b1;
+}
+
+abbr {
+  cursor: help;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.4em;
+}
+
+ul ul {
+  list-style: circle;
+}
+
+::-moz-selection {
+  background: #ffffcb;
+}
+
+::selection {
+  background: #ffffcb;
+}
+
+.wrapper {
+  margin: 0.7em auto;
+  max-width: 767px;
+  min-width: 320px;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    min-width: 768px;
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .wrapper {
+    min-width: 769px;
+    max-width: 960px;
+  }
+}
+
+.island, .island--about {
+  background: white;
+  margin: 0 0.7em 0.7em;
+  padding: 1.4em;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .island, .island--about {
+    margin: 0 0.7em;
+    padding: 0.7em 1.4em;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .island, .island--about {
+    padding: 2.75em 0 0.7em;
+    margin-left: 4.125em;
+  }
+}
+@media print {
+  .island, .island--about {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .island--about {
+    padding-top: 4.125em;
+  }
+}
+
+.island__heading, .island__heading--about {
+  font-size: 28px;
+  font-size: 1.75rem;
+  letter-spacing: -1px;
+  background-color: #4b4bff;
+  color: #ffffcb;
+  display: inline-block;
+  margin-bottom: 0.3928571429em;
+  padding: 0 0.3928571429em;
+}
+@media only screen and (min-width: 769px) {
+  .island__heading, .island__heading--about {
+    left: -2.3571428571em;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+}
+@media print {
+  .island__heading, .island__heading--about {
+    background-color: transparent;
+    color: black;
+    font-size: 18pt;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .island__heading--about {
+    margin-top: 0.7857142857em;
+  }
+}
+
+.contact--footer, .contact--header {
+  padding: 1.4em;
+  text-align: center;
+}
+@media print {
+  .contact--footer, .contact--header {
+    padding: 0 0 0.7em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact--header {
+    border-bottom: 4px solid #4b4bff;
+  }
+}
+@media print {
+  .contact--header {
+    border-bottom: 2px solid black;
+  }
+}
+.contact--header > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact--footer {
+    border-top: 4px solid #4b4bff;
+  }
+}
+@media print {
+  .contact--footer {
+    display: none;
+  }
+}
+
+.contact__name {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+@media print {
+  .contact__name {
+    font-size: 22pt;
+  }
+}
+
+.contact__title {
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+@media print {
+  .contact__title {
+    font-size: 16pt;
+    line-height: 1;
+  }
+}
+
+.contact__info--ref, .contact__info {
+  list-style: none;
+  margin-left: 0;
+}
+
+.contact__info {
+  padding: 0.7em 0 0;
+}
+
+.contact--footer > .contact-info {
+  padding: 0;
+}
+
+.contact__info > li {
+  display: inline;
+  padding-left: 1.4em;
+}
+.contact__info > li:first-child {
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 769px) {
+  .event {
+    color: #969696;
+  }
+}
+
+.event--recent, .event {
+  margin-bottom: 0.7em;
+}
+@media only screen and (min-width: 769px) {
+  .event--recent, .event {
+    padding: 0.7em 1.4em 0.7em 6.1875em;
+    position: relative;
+  }
+  .event--recent:hover, .event:hover {
+    background-color: #ffffcb;
+    color: #212121;
+  }
+}
+@media print {
+  .event--recent, .event {
+    margin-bottom: 1.4em;
+    padding: 0;
+  }
+}
+
+.event__heading {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+@media print {
+  .event__heading {
+    font-size: 12pt;
+  }
+}
+
+.event__subheading--time {
+  line-height: 1;
+  margin-bottom: 0.7em;
+}
+@media only screen and (min-width: 769px) {
+  .event__subheading--time {
+    left: 1.4em;
+    position: absolute;
+    top: 0.7em;
+    width: 4.125em;
+  }
+}
+
+.event__year:before, .event__year--current:before {
+  content: "20";
+}
+@media only screen and (min-width: 769px) {
+  .event__year, .event__year--current {
+    font-size: 28px;
+    font-size: 1.75rem;
+    display: block;
+  }
+  .event__year:before, .event__year--current:before {
+    content: "";
+  }
+}
+@media print {
+  .event__year, .event__year--current {
+    font-size: 10pt;
+  }
+}
+
+.event__year--current {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.event__year--current:before {
+  content: "";
+}
+@media print {
+  .event__year--current {
+    font-size: 10pt;
+  }
+}
+
+.event__details {
+  margin-top: 0.7em;
+}
+
+.event__image {
+  margin-top: 0.7em;
+}
+.alert--warning {
+  background-color: #ffffcb;
+  padding: 1.4em;
+}
+
+.linear {
+  margin-left: 0;
+}
+@media only screen and (min-width: 769px) {
+  .linear {
+    margin-left: 1.4em;
+  }
+}
+
+.linear > li {
+  display: inline;
+}
+.linear > li:after {
+  content: ", ";
+}
+.linear > li:last-child:after {
+  content: ".";
+}
+@media only screen and (min-width: 769px) {
+  .linear > li {
+    display: list-item;
+  }
+  .linear > li:after {
+    content: "";
+  }
+  .linear > li:last-child:after {
+    content: "";
+  }
+}
+
+.include {
+  position: absolute;
+}
+
+@media print {
+  #projects {
+    display: none;
+  }
+
+  #experience > .event:nth-child(3) {
+    page-break-after: always;
+  }
+}
