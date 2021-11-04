@@ -1,6 +1,7 @@
-// Import normalize.css
-@import 'normalize.css/normalize';
+// Import CSS Reset
+@import 'reset-css/sass/_reset';
 
 @import './functions';
 @import './mixins';
 @import './variables';
+@import './utilities';

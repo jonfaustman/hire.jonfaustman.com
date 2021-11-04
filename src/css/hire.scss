@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  // +transition(color .5s linear);
+  transition: color .5s linear;
   color: $spot-color;
   text-decoration: none;
   &:active,
@@ -53,12 +53,12 @@ ul ul {
 
 ::-moz-selection {
   background: $complement-color;
-  // +text-shadow(none);
+  text-shadow: none;
 }
 
 ::selection {
   background: $complement-color;
-  // +text-shadow(none);
+  text-shadow: none;
 }
 
 // Wrapper
@@ -78,8 +78,8 @@ ul ul {
 
 // No man is an island, but content can be.
 .island {
-  // +box-shadow($shadow-start);
-  // +box-sizing(border-box);
+  box-shadow: $shadow-start;
+  box-sizing: border-box;
   background: rgb(255,255,255);
   margin: 0 .7em .7em;
   padding: 1.4em;
@@ -93,7 +93,7 @@ ul ul {
     margin-left: em(66px);
   }
   @media print {
-    // +box-shadow(none);
+    box-shadow: none;
     padding: 0;
   }
 
@@ -105,29 +105,29 @@ ul ul {
   }
 
   @at-root &__heading {
-    // +box-shadow($shadow-start);
+    box-shadow: $shadow-start;
     @include font($size: 28px, $spacing: -1px);
-    // +text-shadow(-1px 1px 0 rgba(0,0,0,.5));
+    text-shadow: -1px 1px 0 rgba(0,0,0,.5);
     background-color: $spot-color;
     color: $complement-color;
     display: inline-block;
     margin-bottom: em(11px, $base: 28px);
     padding: 0 em(11px, $base: 28px);
     @include respond-to(desktop) {
-      // +transform(rotate(-4deg));
-      // +transition(all .5s linear);
+      transform: rotate(-4deg);
+      transition: all .5s linear;
       left: em(-66px, $base: 28px);
       margin: 0;
       position: absolute;
       top: 0;
       z-index: 2;
       &:hover {
-        // +box-shadow($shadow-hover);
+        box-shadow: $shadow-hover;
       }
     }
     @media print {
-      // +box-shadow(none);
-      // +text-shadow(none);
+      box-shadow: none;
+      text-shadow: none;
       background-color: transparent;
       color: rgb(0,0,0);
       font-size: 18pt;
@@ -224,8 +224,8 @@ ul ul {
 .event--recent {
   margin-bottom: .7em;
   @include respond-to(desktop) {
-    // +transition(color .5s linear);
-    // +transition(background-color 1.5s linear);
+    transition: color .5s linear;
+    transition: background-color 1.5s linear;
     padding: .7em 1.4em .7em em(99px);
     position: relative;
     &:hover {
@@ -238,6 +238,7 @@ ul ul {
     padding: 0;
   }
 }
+
 
 .event__heading {
   @include font($size: 28px, $height: 1);
@@ -296,12 +297,12 @@ ul ul {
 }
 
 .event__image {
-  // +box-shadow($shadow-start);
+  box-shadow: $shadow-start;
   margin-top: .7em;
   @include respond-to(desktop) {
-    // +transition(all .5s linear);
+    transition: all .5s linear;
     &:hover {
-      // +box-shadow($shadow-hover);
+      box-shadow: $shadow-hover;
     }
   }
 }
@@ -317,26 +318,26 @@ ul ul {
   @include respond-to(desktop) {
     margin-left: 1.4em;
   }
-}
 
-.linear > li {
-  display: inline;
-  &:after {
-    content: ", ";
-  }
-  &:last-child {
+ > li {
+    display: inline;
     &:after {
-      content: ".";
-    }
-  }
-  @include respond-to(desktop) {
-    display: list-item;
-    &:after {
-      content: "";
+      content: ", ";
     }
     &:last-child {
       &:after {
+        content: ".";
+      }
+    }
+    @include respond-to(desktop) {
+      display: list-item;
+      &:after {
         content: "";
+      }
+      &:last-child {
+        &:after {
+          content: "";
+        }
       }
     }
   }
@@ -344,12 +345,12 @@ ul ul {
 
 // Microformat specific
 .include {
-  // +squish-text;
+  @extend %sr-only;
   position: absolute;
 }
 
 
-// Print specific settomgs
+// Print specific settings
 @media print {
   #projects {
     display: none;
