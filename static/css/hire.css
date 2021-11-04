@@ -360,7 +360,7 @@ ul ul {
     display: block;
   }
   .event__year:before, .event__year--current:before {
-    content: "";
+    content: "'";
   }
 }
 @media print {

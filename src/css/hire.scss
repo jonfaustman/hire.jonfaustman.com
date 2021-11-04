@@ -258,7 +258,7 @@ ul ul {
       @include font($size: 28px);
       display: block;
       &:before {
-        content: "";
+        content: "'";
       }
     }
     @media print {
