@@ -1,17 +1,17 @@
 // Mixin for media queries
 @mixin respond-to($device) {
   @if $device == mobile {
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: $base-respond-to-mobile) {
       @content;
     }
   }
   @if $device == tablet {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $base-respond-to-tablet) {
       @content;
     }
   }
   @if $device == desktop {
-    @media only screen and (min-width: 769px) {
+    @media only screen and (min-width: $base-respond-to-desktop) {
       @content;
     }
   }

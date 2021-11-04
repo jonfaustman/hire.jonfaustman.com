@@ -1,5 +1,8 @@
 // Variables and global silent classes
-$base-font-size: 16px;
+$base-font-size: 16px !default;
+$base-respond-to-mobile: 767px !default;
+$base-respond-to-tablet: 768px !default;
+$base-respond-to-desktop: 769px !default;
 $base-font-family-serif: Georgia, 'Times New Roman', Times, serif;
 $base-font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $fade-out: rgb(150,150,150);
