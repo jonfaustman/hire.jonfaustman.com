@@ -286,10 +286,13 @@ ul ul {
   }
 
   @at-root &__image {
+    border: 1px outset rgba(0,0,0,.1);
+    box-shadow: $shadow-start;
     margin-top: .7em;
     @include respond-to(desktop) {
       transition: all .5s linear;
       &:hover {
+        border: 1px outset rgba(0,0,0,.2);
         box-shadow: $shadow-hover;
       }
     }

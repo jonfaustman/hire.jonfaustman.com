@@ -7,8 +7,8 @@ $base-font-family-serif: Georgia, 'Times New Roman', Times, serif;
 $base-font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $fade-out: rgb(150,150,150);
 $fade-in: rgb(33,33,33);
-$shadow-start: -2px 2px 4px rgba(0,0,0,.25);
-$shadow-hover: -3px 3px 4px rgba(0,0,0,.5);
+$shadow-start: -2px 3px 4px rgba(0,0,0,.25);
+$shadow-hover: -4px 4px 8px rgba(0,0,0,.5);
 $spot-color: rgb(75,75,255);
 $complement-color: lighten(complement($spot-color), 25%);
 %sans-heading {
