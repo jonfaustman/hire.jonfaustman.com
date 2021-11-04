@@ -5,7 +5,7 @@ module.exports = {
   },
   options: {
     processors: [
-      require('autoprefixer')
+      require('autoprefixer')()
     ]
   }
 };
