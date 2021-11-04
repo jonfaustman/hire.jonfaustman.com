@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+// Function for calculating rem.
+// Ensure both numbers use the same unit.
+@function rem($size, $base: $base-font-size) {
+  @return #{math.div($size, $base)}rem;
+}
+
+// Function for calculating em.
+// Ensure both numbers use the same unit.
+@function em($size, $base: $base-font-size) {
+  @return #{math.div($size, $base)}em;
+}

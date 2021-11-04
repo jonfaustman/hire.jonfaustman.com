@@ -1,0 +1,364 @@
+// Import base
+@import './base.scss';
+
+// Generic settings
+body {
+  @include font($size: $base-font-size, $height: 1.4, $family: $base-font-family-serif, $shorthand: true);
+  background-color: $fade-out;
+  color: $fade-in;
+  min-width: 320px;
+  @include respond-to(tablet) {
+    min-width: 768px;
+  }
+  @include respond-to(desktop) {
+    min-width: 769px;
+  }
+  @media print {
+    font-size: 10pt;
+  }
+}
+
+a {
+  transition: color .5s linear;
+  color: $spot-color;
+  text-decoration: none;
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($spot-color, 20%);
+    text-decoration: underline;
+  }
+  &:visted {
+    color: darken($spot-color, 30%);
+  }
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.4em;
+}
+
+ul ul {
+  list-style: circle;
+}
+
+::-moz-selection {
+  background: $complement-color;
+  text-shadow: none;
+}
+
+::selection {
+  background: $complement-color;
+  text-shadow: none;
+}
+
+// Wrapper
+.wrapper {
+  margin: .7em auto;
+  max-width: 767px;
+  min-width: 320px;
+  @include respond-to(tablet) {
+    min-width: 768px;
+    max-width: 768px;
+  }
+  @include respond-to(desktop) {
+    min-width: 769px;
+    max-width: 960px;
+  }
+}
+
+// No man is an island, but content can be.
+.island {
+  box-shadow: $shadow-start;
+  box-sizing: border-box;
+  background: rgb(255,255,255);
+  margin: 0 .7em .7em;
+  padding: 1.4em;
+  position: relative;
+  @include respond-to(tablet) {
+    margin: 0 .7em;
+    padding: .7em 1.4em;
+  }
+  @include respond-to(desktop) {
+    padding: em(44px) 0 .7em;
+    margin-left: em(66px);
+  }
+  @media print {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  @at-root &--about {
+    @extend .island;
+    @include respond-to(desktop) {
+      padding-top: em(66px);
+    }
+  }
+
+  @at-root &__heading {
+    box-shadow: $shadow-start;
+    @include font($size: 28px, $spacing: -1px);
+    text-shadow: -1px 1px 0 rgba(0,0,0,.5);
+    background-color: $spot-color;
+    color: $complement-color;
+    display: inline-block;
+    margin-bottom: em(11px, $base: 28px);
+    padding: 0 em(11px, $base: 28px);
+    @include respond-to(desktop) {
+      transform: rotate(-4deg);
+      transition: all .5s linear;
+      left: em(-66px, $base: 28px);
+      margin: 0;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      &:hover {
+        box-shadow: $shadow-hover;
+      }
+    }
+    @media print {
+      box-shadow: none;
+      text-shadow: none;
+      background-color: transparent;
+      color: rgb(0,0,0);
+      font-size: 18pt;
+      padding: 0;
+    }
+
+    @at-root &--about {
+      @extend .island__heading;
+      @include respond-to(desktop) {
+        margin-top: em(22px, $base: 28px);
+      }
+    }
+  }
+}
+
+// Contact information
+%contact {
+  padding: 1.4em;
+  text-align: center;
+  @media print {
+    padding: 0 0 .7em;
+  }
+}
+
+.contact--header {
+  @extend %contact;
+  @include respond-to(tablet) {
+    border-bottom: 4px solid $spot-color;
+  }
+  @media print {
+    border-bottom: 2px solid rgb(0,0,0);
+  }
+  > a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.contact--footer {
+  @extend %contact;
+  @include respond-to(tablet) {
+    border-top: 4px solid $spot-color;
+  }
+  @media print {
+    display: none;
+  }
+}
+
+.contact__name {
+  @include font($size: 32px, $weight: bold, $spacing: -1px);
+  @media print {
+    font-size: 22pt;
+  }
+}
+
+.contact__title {
+  @include font($size: 22px, $weight: bold);
+  @media print {
+    font-size: 16pt;
+    line-height: 1;
+  }
+}
+
+.contact__info--ref {
+  list-style: none;
+  margin-left: 0;
+}
+
+.contact__info {
+  @extend .contact__info--ref;
+  padding: .7em 0 0;
+}
+
+.contact--footer > .contact-info {
+  padding: 0;
+}
+
+.contact__info > li {
+  display: inline;
+  padding-left: 1.4em;
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+// Event information
+.event {
+  @extend .event--recent;
+  @include respond-to(desktop) {
+    color: $fade-out;
+  }
+}
+
+.event--recent {
+  margin-bottom: .7em;
+  @include respond-to(desktop) {
+    transition: color .5s linear;
+    transition: background-color 1.5s linear;
+    padding: .7em 1.4em .7em em(99px);
+    position: relative;
+    &:hover {
+      background-color: $complement-color;
+      color: $fade-in;
+    }
+  }
+  @media print {
+    margin-bottom: 1.4em;
+    padding: 0;
+  }
+}
+
+
+.event__heading {
+  @include font($size: 28px, $height: 1);
+  @extend %sans-heading;
+  @media print {
+    font-size: 12pt;
+  }
+}
+
+.event__subheading {
+  @extend %sans-heading;
+}
+
+.event__subheading--time {
+  @extend %sans-heading;
+  @include font($height: 1);
+  margin-bottom: .7em;
+  @include respond-to(desktop) {
+    left: 1.4em;
+    position: absolute;
+    top: .7em;
+    width: em(66px);
+  }
+}
+
+.event__year {
+  @extend %sans-heading;
+  &:before {
+    content: "20";
+  }
+  @include respond-to(desktop) {
+    @include font($size: 28px);
+    display: block;
+    &:before {
+      content: "";
+    }
+  }
+  @media print {
+    font-size: 10pt;
+  }
+}
+
+.event__year--current {
+  @extend .event__year;
+  &:before {
+    content: "";
+  }
+  @include font($size: 16px);
+  @media print {
+    font-size: 10pt;
+  }
+}
+
+.event__details {
+  margin-top: .7em;
+}
+
+a.event__details {
+  display: block;
+}
+
+.event__image {
+  box-shadow: $shadow-start;
+  margin-top: .7em;
+  @include respond-to(desktop) {
+    transition: all .5s linear;
+    &:hover {
+      box-shadow: $shadow-hover;
+    }
+  }
+}
+
+// Helper classes
+.alert--warning {
+  background-color: $complement-color;
+  padding: 1.4em;
+}
+
+.linear {
+  margin-left: 0;
+  @include respond-to(desktop) {
+    margin-left: 1.4em;
+  }
+
+ > li {
+    display: inline;
+    &:after {
+      content: ", ";
+    }
+    &:last-child {
+      &:after {
+        content: ".";
+      }
+    }
+    @include respond-to(desktop) {
+      display: list-item;
+      &:after {
+        content: "";
+      }
+      &:last-child {
+        &:after {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+// Microformat specific
+.include {
+  @extend %sr-only;
+}
+
+
+// Print specific settings
+@media print {
+  #projects {
+    display: none;
+  }
+  #experience > .event:nth-child(3){
+    page-break-after: always;
+  }
+}
