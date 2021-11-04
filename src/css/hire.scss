@@ -258,7 +258,8 @@ ul ul {
       @include font($size: 28px);
       display: block;
       &:before {
-        content: "'";
+        content: "’";
+        font-weight: normal;
       }
     }
     @media print {
