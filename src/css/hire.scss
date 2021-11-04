@@ -215,108 +215,92 @@ ul ul {
 
 // Event information
 .event {
-  @extend .event--recent;
-  @include respond-to(desktop) {
-    color: $fade-out;
-  }
-}
-
-.event--recent {
   margin-bottom: .7em;
   @include respond-to(desktop) {
-    transition: color .5s linear;
-    transition: background-color 1.5s linear;
     padding: .7em 1.4em .7em em(99px);
     position: relative;
-    &:hover {
-      background-color: $complement-color;
-      color: $fade-in;
-    }
   }
   @media print {
     margin-bottom: 1.4em;
     padding: 0;
   }
-}
 
-
-.event__heading {
-  @include font($size: 28px, $height: 1);
-  @extend %sans-heading;
-  @media print {
-    font-size: 12pt;
-  }
-}
-
-.event__subheading {
-  @extend %sans-heading;
-}
-
-.event__subheading--time {
-  @extend %sans-heading;
-  @include font($height: 1);
-  margin-bottom: .7em;
-  @include respond-to(desktop) {
-    left: 1.4em;
-    position: absolute;
-    top: .7em;
-    width: em(66px);
-  }
-}
-
-.event__year {
-  @extend %sans-heading;
-  &:before {
-    content: "20";
-  }
-  @include respond-to(desktop) {
-    @include font($size: 28px);
-    display: block;
-    &:before {
-      content: "";
+  @at-root &__heading {
+    @include font($size: 28px, $height: 1);
+    @extend %sans-heading;
+    @media print {
+      font-size: 12pt;
     }
   }
-  @media print {
-    font-size: 10pt;
+
+  @at-root &__subheading {
+    @extend %sans-heading;
+
+    @at-root &--time {
+      @extend %sans-heading;
+      @include font($height: 1);
+      margin-bottom: .7em;
+      @include respond-to(desktop) {
+        left: 1.4em;
+        position: absolute;
+        top: .7em;
+        width: em(66px);
+      }
+    }    
   }
-}
 
-.event__year--current {
-  @extend .event__year;
-  &:before {
-    content: "";
+  @at-root &__year {
+    @extend %sans-heading;
+    &:before {
+      content: "20";
+    }
+    @include respond-to(desktop) {
+      @include font($size: 28px);
+      display: block;
+      &:before {
+        content: "’";
+        font-weight: normal;
+      }
+    }
+    @media print {
+      font-size: 10pt;
+    }
+
+    @at-root &--current {
+      @extend .event__year;
+      &:before {
+        content: "";
+      }
+      @include font($size: 16px);
+      @media print {
+        font-size: 10pt;
+      }
+    }
   }
-  @include font($size: 16px);
-  @media print {
-    font-size: 10pt;
+
+  @at-root &__details {
+    margin-top: .7em;
   }
-}
 
-.event__details {
-  margin-top: .7em;
-}
+  @at-root a.event__details {
+    display: block;
+  }
 
-a.event__details {
-  display: block;
-}
-
-.event__image {
-  box-shadow: $shadow-start;
-  margin-top: .7em;
-  @include respond-to(desktop) {
-    transition: all .5s linear;
-    &:hover {
-      box-shadow: $shadow-hover;
+  @at-root &__image {
+    border: 1px outset rgba(0,0,0,.1);
+    box-shadow: $shadow-start;
+    margin-top: .7em;
+    @include respond-to(desktop) {
+      transition: all .5s linear;
+      &:hover {
+        border: 1px outset rgba(0,0,0,.2);
+        box-shadow: $shadow-hover;
+      }
     }
   }
 }
 
 // Helper classes
-.alert--warning {
-  background-color: $complement-color;
-  padding: 1.4em;
-}
-
 .linear {
   margin-left: 0;
   @include respond-to(desktop) {

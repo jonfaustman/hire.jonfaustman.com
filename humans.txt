@@ -1,9 +1,9 @@
 /* TEAM */
-    Senior Front-end Developer: Jon Faustman
+    Web Developer: Jon Faustman
     Site: http://jonfaustman.com/
     Twitter: @faustman
     Location: Manhattan, KS
 
 /* SITE */
-    Standards: HTML5, CSS3
-    Components: HTML5 Boilerplate, Modernizr, Sass, Compass
+    Standards: HTML, CSS3
+    Components: HTML5 Boilerplate, Sass, BEM
