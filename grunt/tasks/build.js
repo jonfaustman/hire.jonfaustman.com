@@ -5,7 +5,6 @@ module.exports = function(grunt) {
       'clean:build',
       'sass:build',
       'copy:build',
-      'concat',
       'postcss:build'
     ]
   );
