@@ -1,7 +1,7 @@
 // Copy files
 module.exports = {
 
-  // Copies to static/build/
+  // Copies files to build destination
   build: {
     cwd: '<%= src %>',
     src: [
