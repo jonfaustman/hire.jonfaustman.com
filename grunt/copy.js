@@ -14,16 +14,4 @@ module.exports = {
     dest: '<%= dest_build %>',
     expand: true
   },
-
-  // Copies static/build/ --> static/dist/<version>/
-  dist: {
-    cwd: '<%= dest_build %>',
-    src: [
-      '**',
-      '!**/js/**',
-      '!**/css/**'
-    ],
-    dest: '<%= dest_dist %>',
-    expand: true
-  }
 };

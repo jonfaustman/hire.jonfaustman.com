@@ -7,7 +7,6 @@ module.exports = {
       '!css/**/*.min.css'
     ],
     dest: '<%= dest_dist %>',
-    ext: '.min.css',
     expand: true,
     sourceMap: true,
     options: {

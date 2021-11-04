@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       pkg: grunt.file.readJSON('package.json'),
       src: 'src/',
       dest_build: 'static/',
-      dest_dist: 'static/dist/<%= pkg.version %>/'
+      dest_dist: '<%= dest_build %>'
     }
   });
 

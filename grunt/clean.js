@@ -6,10 +6,4 @@ module.exports = {
       '<%= dest_build %>'
     ]
   },
-
-  dist: {
-    src: [
-      'static/dist/'
-    ]
-  }
 };
